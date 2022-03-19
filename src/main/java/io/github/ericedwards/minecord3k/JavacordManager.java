@@ -46,7 +46,8 @@ public class JavacordManager {
     }
 
     public synchronized void start() {
-        String token = "DISCORD_TOKEN_HERE";
+        ConfigManager cm = ConfigManager.instance();
+        String token = cm.getProperty("discord.token");
         discordApi = new DiscordApiBuilder()
                 .setToken(token)
                 .login().join();
