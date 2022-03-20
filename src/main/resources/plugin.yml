@@ -1,8 +1,8 @@
 name: MineCord3K
-version: 0.99.0
+version: 0.99.3
 author: Eric Edwards
 main: io.github.ericedwards.minecord3k.MineCord3KPlugin
-api-version: 1.16
+api-version: 1.18
 commands:
   kit:
     description: Give a player a starting kit
